@@ -1,0 +1,151 @@
+2016-08-12 15:14:18,044 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'groovy_teste'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-12 15:14:19,321 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-12 15:14:20,264 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-12 15:14:20,826 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-12 15:14:20,826 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-12 15:14:21,310 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2babf189: startup date [Fri Aug 12 15:14:21 BRT 2016]; root of context hierarchy
+2016-08-12 15:14:26,654 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-12 15:14:32,024 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-12 15:14:36,096 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-12 15:14:36,102 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: groovy_testeFlow
+2016-08-12 15:14:36,102 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4239262e
+2016-08-12 15:14:36,748 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: groovy_testeFlow.stage1
+2016-08-12 15:14:36,867 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1520921298
+2016-08-12 15:14:44,820 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-tx-log\tx2.log
+2016-08-12 15:14:44,887 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-xa-tx-log\tx2.log
+2016-08-12 15:14:46,917 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\groovy_teste\groovy_teste.xml'}]"
+2016-08-12 15:14:46,918 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\groovy_teste\groovy_teste.xml'}]"
+2016-08-12 15:14:50,051 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'groovy_teste'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-12 15:14:50,055 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-12 15:14:50,055 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-12 15:14:50,332 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-08-12 15:14:50,336 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-12 15:14:50,340 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-12 15:14:50,343 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: groovy_testeFlow
+2016-08-12 15:14:50,344 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: groovy_testeFlow.stage1
+2016-08-12 15:14:50,372 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1520921298
+2016-08-12 15:14:50,581 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-12 15:14:50,725 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: groovy_teste                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-12 15:15:28,822 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/
+2016-08-12 15:15:28,822 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/groovy/]
+2016-08-12 15:15:53,822 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=ce7916f0-60b8-11e6-b75f-d06f20524153
+  payload=org.glassfish.grizzly.utils.BufferInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    accept-language=pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+    cache-control=no-cache
+    connection=keep-alive
+    content-length=424
+    content-type=application/json
+    host=localhost:8081
+    http.listener.path=/groovy
+    http.method=POST
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=/groovy
+    http.remote.address=/127.0.0.1:55332
+    http.request.path=/groovy
+    http.request.uri=/groovy
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    origin=chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+    postman-token=ed31dc93-dbae-42d8-a34c-500dfd50f228
+    user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+  OUTBOUND scoped properties:
+    MULE_ENCODING=windows-1252
+  SESSION scoped properties:
+}
+2016-08-12 15:21:30,282 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - teste groovy
+2016-08-12 15:29:20,898 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'groovy_teste'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-12 15:29:21,592 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-12 15:29:22,073 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-12 15:29:22,427 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-12 15:29:22,429 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-12 15:29:22,611 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@15d0849: startup date [Fri Aug 12 15:29:22 BRT 2016]; root of context hierarchy
+2016-08-12 15:29:25,925 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-12 15:29:29,093 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-12 15:29:31,464 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-12 15:29:31,472 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: groovy_testeFlow
+2016-08-12 15:29:31,472 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2ba024cb
+2016-08-12 15:29:31,571 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: groovy_testeFlow.stage1
+2016-08-12 15:29:31,608 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.922150177
+2016-08-12 15:29:33,297 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-tx-log\tx2.log
+2016-08-12 15:29:33,353 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\groovy_teste\queue-xa-tx-log\tx2.log
+2016-08-12 15:29:34,395 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\groovy_teste\groovy_teste.xml'}]"
+2016-08-12 15:29:34,395 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\groovy_teste\groovy_teste.xml'}]"
+2016-08-12 15:29:37,487 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'groovy_teste'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-12 15:29:37,488 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-12 15:29:37,488 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-12 15:29:37,643 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-08-12 15:29:37,643 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-12 15:29:37,653 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-12 15:29:37,653 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: groovy_testeFlow
+2016-08-12 15:29:37,653 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: groovy_testeFlow.stage1
+2016-08-12 15:29:37,663 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.922150177
+2016-08-12 15:29:37,794 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-12 15:29:37,855 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: groovy_teste                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-12 15:32:17,852 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - org.glassfish.grizzly.utils.BufferInputStream@1f3c5cc6
+2016-08-12 15:32:28,410 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ====Variavel==== groovy Payload ok ========
+2016-08-12 15:32:57,469 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - org.glassfish.grizzly.utils.BufferInputStream@5a7bcd2
+2016-08-12 15:33:22,298 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ====Variavel==== groovy Payload ok ========
+2016-08-12 15:33:51,627 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - org.glassfish.grizzly.utils.BufferInputStream@7be30316
+2016-08-12 15:34:00,026 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ====Variavel==== groovy Payload ok ========
+2016-08-12 15:34:15,808 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - org.glassfish.grizzly.utils.BufferInputStream@7dfb2ea3
+2016-08-12 15:34:22,083 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ====Variavel==== groovy Payload ok ========
+2016-08-12 15:34:41,892 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - org.glassfish.grizzly.utils.BufferInputStream@33581e8f
+2016-08-12 15:34:47,346 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ====Variavel==== groovy Payload ok ========
+2016-08-12 15:34:55,024 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - null
+2016-08-12 15:35:15,819 [[groovy_teste].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ====Variavel==== groovy Payload ok ========

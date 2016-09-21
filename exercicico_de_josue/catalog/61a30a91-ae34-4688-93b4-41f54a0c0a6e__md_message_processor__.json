@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "retornado_da_api_filmes"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "titulo_data_title_language"
+        }
+    },
+    "id": "61a30a91-ae34-4688-93b4-41f54a0c0a6e",
+    "version": "5.2.0.0"
+}

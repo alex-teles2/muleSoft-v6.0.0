@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <flow name="foreach_testeFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <logger message="#[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message metadata:id="d1c153df-e761-4750-9894-a1b6441b13a3" doc:name="Transform Message">
+            <dw:input-payload doc:sample="exemplo.json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%input payload application/json
+%output application/java
+---
+[{
+		Nome: payload.Produtos.Nome,
+		Descricao: payload.Produtos.Descricao,
+		valor: payload.Produtos.valor
+}]
+	
+]]></dw:set-payload>
+        </dw:transform-message>
+        <foreach doc:name="For Each">
+            <logger message="counter" level="INFO" doc:name="Logger"/>
+        </foreach>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

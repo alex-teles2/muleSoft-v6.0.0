@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;exercicico_de_josue/src/main/resources/json/transformacaoTituloLinguagem.jsosn&apos; to &apos;transformacaoTituloLinguagem.json&apos;" description="Rename resource &apos;transformacaoTituloLinguagem.jsosn&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/json/transformacaoTituloLinguagem.jsosn" name="transformacaoTituloLinguagem.json" stamp="1469543251025" updateReferences="true"/>
+</session>

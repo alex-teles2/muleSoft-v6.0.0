@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="${local.port}" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="HTTP_Request_Configuration" host="api.themoviedb.org" port="80" doc:name="HTTP Request Configuration" basePath="/3"/>
+    <flow name="exercicico_de_josueFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/requisitafilmes" doc:name="HTTP" doc:description="Entrada parametros para usar como chave no query-param
+
+{
+    &quot;api_key&quot;:&quot;40d9f5a24947b853ce6b60600009fb1a&quot;
+}"/>
+        <set-variable variableName="apikey" value="#[json:api_key]" doc:name="Variable"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="movie/popular" method="GET" doc:name="HTTP" metadata:id="fff01f7e-385a-45d5-b72e-8c16144342d3">
+            <http:request-builder>
+                <http:query-param paramName="api_key" value="#[flowVars.apikey]"/>
+            </http:request-builder>
+        </http:request>
+        <logger message="#[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="61a30a91-ae34-4688-93b4-41f54a0c0a6e">
+            <dw:input-payload doc:sample="json\requestCompleto.json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	
+	
+	Filmes: payload.results[0..9] map ((result , indexOfResult) -> {
+		poster_path: result.poster_path,
+		release_date: result.release_date,
+		original_language: result.original_language,
+		title: result.title
+	})
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger message="#[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
+        <exception-strategy ref="exercicico_de_josueCatch_Exception_Strategy" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <catch-exception-strategy name="exercicico_de_josueCatch_Exception_Strategy">
+        <logger message="Erro generico #[exception]" level="INFO" doc:name="Logger"/>
+        <set-payload value="{&quot;message&quot;:&quot;#[exception.getMessage()]&quot;}" doc:name="Set Payload"/>
+    </catch-exception-strategy>
+</mule>

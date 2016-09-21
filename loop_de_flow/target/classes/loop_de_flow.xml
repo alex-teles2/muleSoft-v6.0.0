@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:schedulers="http://www.mulesoft.org/schema/mule/schedulers" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/schedulers http://www.mulesoft.org/schema/mule/schedulers/current/mule-schedulers.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <flow name="loop_de_flowFlow_1">
+        <poll doc:name="Poll">
+            <schedulers:cron-scheduler expression="0 0 0 1 * ? 2016"/>
+            <logger message="Iniciado" level="INFO" doc:name="Logger"/>
+        </poll>
+        <set-payload value="#[3]" doc:name="Set Payload"/>
+        <logger message="Valor do payload ======= #[payload] ============" level="INFO" doc:name="Logger"/>
+        <flow-ref name="loop_de_flowFlow_2" doc:name="Chama_Flow_2"/>
+    </flow>
+    <flow name="loop_de_flowFlow_2">
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="#[payload &gt; 1]">
+                <logger message="Entrou no Choice" level="INFO" doc:name="Logger"/>
+                <set-payload value="#[payload - 1 ]" doc:name="Set Payload"/>
+                <flow-ref name="loop_de_flowFlow_2" doc:name="Chama_flow_2"/>
+            </when>
+            <otherwise>
+                <logger message="Fim....." level="INFO" doc:name="Logger"/>
+            </otherwise>
+        </choice>
+    </flow>
+</mule>

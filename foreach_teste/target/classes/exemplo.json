@@ -1,0 +1,17 @@
+
+  {
+    "Produtos":[
+      {
+        "Nome":"teste_1",
+        "Descricao":"Pacote de fuba",
+        "valor":13
+      },
+      {
+        "nome":"teste_2",
+        "Descricao":"Coca-cola",
+        "valor":11
+      }
+    ]
+    
+  }
+  

@@ -1,0 +1,1730 @@
+2016-08-10 10:30:39,027 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:30:40,469 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:30:41,259 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:30:42,144 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:30:42,144 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:30:43,217 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@479f2dc2: startup date [Wed Aug 10 10:30:43 BRT 2016]; root of context hierarchy
+2016-08-10 10:30:50,175 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:31:01,167 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:31:02,956 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:31:03,820 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:31:03,826 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:31:03,826 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1815577b
+2016-08-10 10:31:03,963 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:31:04,020 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:31:04,021 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1cba0321
+2016-08-10 10:31:04,037 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:31:04,343 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:31:04,749 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:31:07,410 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:31:07,410 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:31:10,712 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:31:10,716 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:31:10,716 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:31:11,153 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=4e17442f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:31:11,153 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=4e17442f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:31:11,154 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:31:11,158 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:31:11,168 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:31:11,171 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:31:11,172 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:31:11,217 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:31:11,288 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:31:11,531 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:31:11,668 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:31:11,704 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:31:11,706 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:31:11,708 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/2016308032' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:31:11,708 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/2016308032' initialized from an externally provided properties instance.
+2016-08-10 10:31:11,708 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:31:11,733 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/2016308032_$_NON_CLUSTERED started.
+2016-08-10 10:31:11,735 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:31:11,736 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:31:11,736 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:31:11,737 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:31:11,737 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:31:12,555 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:31:12,721 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:31:12,722 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:31:12,724 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:31:12,734 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:31:30,001 [loop_de_flow-polling://loop_de_flowFlow_1/2016308032_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=beed84c0-5efe-11e6-8e0c-32a120524153
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2016-08-10 10:31:34,363 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=beed84c0-5efe-11e6-8e0c-32a120524153
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    contador=3
+    pollingFrequency=1000
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint.polling.1912630717
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2016-08-10 10:31:43,753 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=beed84c0-5efe-11e6-8e0c-32a120524153
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    contador=3
+    pollingFrequency=1000
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint.polling.1912630717
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2016-08-10 10:32:51,974 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=beed84c0-5efe-11e6-8e0c-32a120524153
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    contador=3
+    pollingFrequency=1000
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint.polling.1912630717
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2016-08-10 10:35:14,784 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:35:15,587 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:35:16,114 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:35:16,585 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:35:16,587 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:35:16,801 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3b90a30a: startup date [Wed Aug 10 10:35:16 BRT 2016]; root of context hierarchy
+2016-08-10 10:35:21,249 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:35:26,435 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:35:27,022 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:35:27,475 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:35:27,482 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:35:27,482 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@147e0734
+2016-08-10 10:35:27,533 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:35:27,562 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:35:27,562 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1d2d8846
+2016-08-10 10:35:27,577 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:35:27,654 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:35:27,859 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:35:28,873 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:35:28,873 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:35:31,920 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:35:31,924 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:35:31,924 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:35:32,232 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=45287377
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:35:32,232 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=45287377
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:35:32,233 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:35:32,238 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:35:32,242 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:35:32,244 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:35:32,246 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:35:32,277 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:35:32,309 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:35:32,488 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:35:32,574 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:35:32,993 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:35:32,995 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:35:32,997 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1430053704' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:35:32,997 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1430053704' initialized from an externally provided properties instance.
+2016-08-10 10:35:32,997 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:35:33,013 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1430053704_$_NON_CLUSTERED started.
+2016-08-10 10:35:33,014 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:35:33,014 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:35:33,015 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:35:33,015 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:35:33,015 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:35:33,216 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:35:33,274 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:35:33,276 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:35:33,285 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:35:33,290 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:35:38,796 [loop_de_flow-polling://loop_de_flowFlow_1/1430053704_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:35:47,004 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:35:57,659 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=533ce530-5eff-11e6-bb93-32a120524153
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    contador=3
+    pollingFrequency=1000
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint.polling.1912630717
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2016-08-10 10:38:31,276 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:38:31,984 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:38:32,410 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:38:32,753 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:38:32,754 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:38:32,933 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@31da3d60: startup date [Wed Aug 10 10:38:32 BRT 2016]; root of context hierarchy
+2016-08-10 10:38:37,197 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:38:41,507 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:38:42,105 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:38:42,538 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:38:42,546 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:38:42,546 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@611c3eae
+2016-08-10 10:38:42,611 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:38:42,640 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:38:42,641 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@41fc0084
+2016-08-10 10:38:42,656 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:38:42,733 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:38:42,823 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:38:43,951 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:38:43,951 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:38:47,142 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:38:47,146 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:38:47,146 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:38:47,305 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=5f193335
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:38:47,305 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=5f193335
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:38:47,306 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:38:47,311 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:38:47,352 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:38:47,355 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:38:47,356 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:38:47,380 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:38:47,417 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:38:47,607 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:38:48,207 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:38:48,213 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:38:48,214 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:38:48,218 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/2076359512' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:38:48,218 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/2076359512' initialized from an externally provided properties instance.
+2016-08-10 10:38:48,218 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:38:48,242 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/2076359512_$_NON_CLUSTERED started.
+2016-08-10 10:38:48,243 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:38:48,244 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:38:48,244 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:38:48,244 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:38:48,244 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:38:48,491 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:38:48,559 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:38:48,561 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:38:48,563 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:38:48,568 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:38:54,466 [loop_de_flow-polling://loop_de_flowFlow_1/2076359512_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:38:59,680 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:39:05,726 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:39:08,516 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:39:22,735 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:39:26,659 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:39:29,416 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:39:32,098 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:39:34,511 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:39:36,197 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:39:39,157 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:39:42,372 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:39:43,669 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:39:44,367 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:39:45,367 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:39:45,799 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:39:47,036 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:40:35,856 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:40:36,803 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:40:37,105 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:40:37,475 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:40:37,476 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:40:37,833 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@61e3cf4d: startup date [Wed Aug 10 10:40:37 BRT 2016]; root of context hierarchy
+2016-08-10 10:40:41,415 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:40:45,029 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:40:45,559 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:40:45,995 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:40:46,001 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:40:46,001 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6d969330
+2016-08-10 10:40:46,042 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:40:46,066 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:40:46,066 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@421ead7e
+2016-08-10 10:40:46,084 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:40:46,151 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:40:46,213 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:40:47,181 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:40:47,181 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:40:50,230 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:40:50,234 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:40:50,234 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:40:50,327 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=3e03046d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:40:50,327 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=3e03046d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:40:50,328 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:40:50,332 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:40:50,337 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:40:50,340 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:40:50,341 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:40:50,387 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:40:50,432 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:40:50,585 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:40:50,731 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:40:50,746 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:40:51,052 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:40:51,068 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/937777177' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:40:51,068 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/937777177' initialized from an externally provided properties instance.
+2016-08-10 10:40:51,068 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:40:51,098 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/937777177_$_NON_CLUSTERED started.
+2016-08-10 10:40:51,098 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:40:51,099 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:40:51,099 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:40:51,099 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:40:51,099 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:40:51,302 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:40:51,365 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:40:51,366 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:40:51,377 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:40:51,389 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:40:58,502 [loop_de_flow-polling://loop_de_flowFlow_1/937777177_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:41:01,945 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:41:03,192 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:41:05,455 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:41:11,889 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:41:13,195 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:41:14,881 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:41:18,596 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:41:19,930 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:41:21,266 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:41:29,180 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:41:31,610 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:41:38,795 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:41:59,074 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:42:00,672 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:42:44,476 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:43:04,915 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:43:22,606 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:43:23,740 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:43:24,074 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:43:24,522 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:43:24,522 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:43:24,795 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6be7bf6d: startup date [Wed Aug 10 10:43:24 BRT 2016]; root of context hierarchy
+2016-08-10 10:43:28,531 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:43:33,028 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:43:33,656 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:43:34,134 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:43:34,140 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:43:34,140 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4bbf38b8
+2016-08-10 10:43:34,193 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:43:34,214 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:43:34,214 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2bfc2f8b
+2016-08-10 10:43:34,229 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:43:34,316 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:43:34,388 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:43:36,223 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:43:36,223 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:43:39,419 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:43:39,424 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:43:39,424 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:43:39,522 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=24197b13
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:43:39,522 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=24197b13
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:43:39,524 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:43:39,528 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:43:39,533 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:43:39,542 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:43:39,543 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:43:39,567 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:43:39,598 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:43:39,805 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:43:39,917 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:43:39,924 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:43:39,926 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:43:40,247 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1814361629' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:43:40,247 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1814361629' initialized from an externally provided properties instance.
+2016-08-10 10:43:40,247 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:43:40,265 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1814361629_$_NON_CLUSTERED started.
+2016-08-10 10:43:40,265 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:43:40,266 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:43:40,266 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:43:40,267 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:43:40,267 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:43:40,753 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:43:40,870 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:43:40,872 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:43:40,874 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:43:40,884 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:43:48,639 [loop_de_flow-polling://loop_de_flowFlow_1/1814361629_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:43:49,514 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:43:52,915 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:43:55,368 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:44:01,945 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:44:03,994 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:44:06,241 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:44:12,369 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:44:13,596 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:44:15,740 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:44:22,650 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor da variavel ======= 3 ============
+2016-08-10 10:44:23,991 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - flow ==> 2
+2016-08-10 10:44:25,479 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:46:32,616 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:46:33,178 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:46:33,852 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:46:34,530 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:46:34,532 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:46:34,743 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@58a2b4c: startup date [Wed Aug 10 10:46:34 BRT 2016]; root of context hierarchy
+2016-08-10 10:46:38,676 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:46:43,513 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:46:44,188 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:46:44,699 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:46:44,711 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:46:44,711 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4f64d9cb
+2016-08-10 10:46:44,759 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:46:44,786 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:46:44,786 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7272ee51
+2016-08-10 10:46:44,802 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:46:44,873 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:46:44,955 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:46:46,834 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:46:46,835 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:46:49,905 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:46:49,908 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:46:49,908 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:46:50,006 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=a316f6b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:46:50,006 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=a316f6b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:46:50,007 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:46:50,012 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:46:50,018 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:46:50,021 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:46:50,022 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:46:50,105 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:46:50,134 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:46:50,278 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:46:50,727 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:46:50,736 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:46:50,738 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:46:50,740 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1060921037' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:46:50,740 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1060921037' initialized from an externally provided properties instance.
+2016-08-10 10:46:50,740 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:46:50,761 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1060921037_$_NON_CLUSTERED started.
+2016-08-10 10:46:50,761 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:46:50,762 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:46:50,762 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:46:50,763 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:46:50,763 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:46:50,990 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:46:51,155 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:46:51,157 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:46:51,160 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:46:51,164 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:46:54,992 [loop_de_flow-polling://loop_de_flowFlow_1/1060921037_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:49:43,923 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:49:44,726 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:49:44,980 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:49:45,293 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:49:45,294 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:49:45,472 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5f18f9d2: startup date [Wed Aug 10 10:49:45 BRT 2016]; root of context hierarchy
+2016-08-10 10:49:50,278 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:49:55,094 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:49:55,762 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:49:56,633 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:49:56,651 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:49:56,651 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2cc75b25
+2016-08-10 10:49:56,821 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:49:56,846 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:49:56,846 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@aa752bb
+2016-08-10 10:49:56,859 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:49:56,943 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:49:56,996 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:49:59,135 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:49:59,135 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:50:02,214 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:50:02,218 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:50:02,218 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:50:02,303 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=25699aa7
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:50:02,303 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=25699aa7
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:50:02,304 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:50:02,309 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:50:02,313 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:50:02,315 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:50:02,316 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:50:02,341 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:50:02,370 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:50:02,591 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:50:02,704 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:50:02,711 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:50:02,714 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:50:03,066 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1113284578' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:50:03,066 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1113284578' initialized from an externally provided properties instance.
+2016-08-10 10:50:03,066 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:50:03,089 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1113284578_$_NON_CLUSTERED started.
+2016-08-10 10:50:03,089 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:50:03,090 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:50:03,090 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:50:03,090 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:50:03,090 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:50:03,399 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:50:03,473 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:50:03,474 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:50:03,476 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:50:03,487 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:50:06,560 [loop_de_flow-polling://loop_de_flowFlow_1/1113284578_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:50:10,253 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:50:16,047 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - entrou no flow_2
+2016-08-10 10:51:07,974 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:51:09,319 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:51:09,979 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:51:10,363 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:51:10,363 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:51:10,736 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1eb2d371: startup date [Wed Aug 10 10:51:10 BRT 2016]; root of context hierarchy
+2016-08-10 10:51:16,487 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:51:21,368 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:51:22,246 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:51:22,767 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:51:22,775 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:51:22,775 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1815577b
+2016-08-10 10:51:22,824 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:51:22,849 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:51:22,849 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1cba0321
+2016-08-10 10:51:22,863 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:51:22,931 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:51:22,994 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:51:24,730 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:51:24,731 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:51:27,910 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:51:27,912 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:51:27,912 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:51:28,800 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=4e17442f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:51:28,800 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=4e17442f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:51:28,801 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:51:28,805 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:51:28,810 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:51:28,812 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:51:28,813 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:51:28,832 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:51:28,862 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:51:29,068 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:51:29,242 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:51:29,518 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:51:29,521 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:51:29,524 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1050196275' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:51:29,524 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1050196275' initialized from an externally provided properties instance.
+2016-08-10 10:51:29,524 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:51:29,544 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1050196275_$_NON_CLUSTERED started.
+2016-08-10 10:51:29,544 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:51:29,545 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:51:29,545 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:51:29,545 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:51:29,545 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:51:29,790 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:51:29,871 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:51:29,873 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:51:29,886 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:51:29,898 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:51:38,441 [loop_de_flow-polling://loop_de_flowFlow_1/1050196275_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:51:40,959 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:51:49,964 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:54:27,558 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:54:28,232 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:54:28,881 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:54:29,298 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:54:29,298 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:54:29,554 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6ff415ad: startup date [Wed Aug 10 10:54:29 BRT 2016]; root of context hierarchy
+2016-08-10 10:54:35,925 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:54:40,718 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:54:41,842 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:54:42,329 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:54:42,338 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:54:42,341 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@ee96866
+2016-08-10 10:54:42,404 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:54:42,434 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:54:42,434 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@762a10b6
+2016-08-10 10:54:42,449 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:54:42,525 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:54:42,604 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:54:44,177 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:54:44,178 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:54:47,468 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:54:47,474 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:54:47,474 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:54:47,561 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=29bd85db
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:54:47,561 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=29bd85db
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:54:47,562 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:54:47,572 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:54:47,579 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:54:47,581 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:54:47,582 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:54:47,601 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:54:47,630 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:54:47,778 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:54:47,883 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:54:47,889 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:54:47,891 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:54:47,893 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1257704323' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:54:47,893 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1257704323' initialized from an externally provided properties instance.
+2016-08-10 10:54:47,893 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:54:47,911 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1257704323_$_NON_CLUSTERED started.
+2016-08-10 10:54:47,911 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:54:47,913 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:54:47,913 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:54:47,913 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:54:47,913 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:54:48,526 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:54:48,590 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:54:48,590 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:54:48,593 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:54:48,599 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:54:55,303 [loop_de_flow-polling://loop_de_flowFlow_1/1257704323_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:55:00,856 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:55:05,019 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:55:07,949 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:55:54,432 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:55:55,294 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:55:56,212 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:57:43,595 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:57:44,268 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 10:57:44,810 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 10:57:45,261 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 10:57:45,261 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 10:57:45,521 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@e1e2e5e: startup date [Wed Aug 10 10:57:45 BRT 2016]; root of context hierarchy
+2016-08-10 10:57:49,995 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 10:57:56,137 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 10:57:56,885 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 10:57:57,421 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 10:57:57,429 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 10:57:57,430 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@25567581
+2016-08-10 10:57:57,484 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 10:57:57,507 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 10:57:57,507 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2bfc2f8b
+2016-08-10 10:57:57,522 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 10:57:57,602 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 10:57:57,673 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 10:57:59,573 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:57:59,573 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 10:58:02,776 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:58:02,780 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 10:58:02,780 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 10:58:02,915 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=1c62c3fd
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:58:02,915 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=1c62c3fd
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 10:58:02,916 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 10:58:02,920 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 10:58:02,925 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 10:58:02,929 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 10:58:02,931 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 10:58:02,952 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 10:58:02,987 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:58:03,146 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 10:58:03,255 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 10:58:03,265 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 10:58:03,266 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 10:58:03,268 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1814361629' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 10:58:03,268 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1814361629' initialized from an externally provided properties instance.
+2016-08-10 10:58:03,268 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 10:58:03,289 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1814361629_$_NON_CLUSTERED started.
+2016-08-10 10:58:03,289 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 10:58:03,290 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 10:58:03,290 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 10:58:03,290 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 10:58:03,290 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 10:58:04,045 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 10:58:04,151 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:58:04,151 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 10:58:04,166 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 10:58:04,177 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 10:58:12,900 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:58:32,489 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:58:52,657 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:58:54,738 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:59:08,634 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:59:11,649 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:59:13,144 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:59:14,799 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:59:18,134 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:59:19,289 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:59:20,646 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:59:21,679 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:59:23,325 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:59:23,666 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:59:24,379 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:59:25,062 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:59:25,942 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:59:26,135 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:59:26,484 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:59:26,830 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:59:27,580 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:59:27,760 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:59:27,963 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 10:59:28,233 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 10:59:28,578 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 10:59:28,860 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 10:59:29,553 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:01:30,121 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:01:30,863 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 11:01:31,273 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 11:01:31,689 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 11:01:31,690 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 11:01:32,033 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3fbfbf84: startup date [Wed Aug 10 11:01:31 BRT 2016]; root of context hierarchy
+2016-08-10 11:01:37,250 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 11:01:41,575 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 11:01:42,219 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 11:01:42,637 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 11:01:42,644 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 11:01:42,645 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3cf55e0c
+2016-08-10 11:01:42,697 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 11:01:42,737 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 11:01:42,737 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3a45afd4
+2016-08-10 11:01:42,753 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 11:01:42,903 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 11:01:42,970 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 11:01:44,460 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:01:44,460 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:01:47,604 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:01:47,608 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 11:01:47,608 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 11:01:47,775 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=5d7f8467
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:01:47,775 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=5d7f8467
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:01:47,776 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 11:01:47,794 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:01:47,799 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 11:01:47,804 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 11:01:47,805 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 11:01:47,826 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 11:01:47,860 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:01:48,204 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 11:01:48,668 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 11:01:48,679 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 11:01:48,681 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 11:01:48,683 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/293207180' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 11:01:48,683 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/293207180' initialized from an externally provided properties instance.
+2016-08-10 11:01:48,683 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 11:01:48,701 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/293207180_$_NON_CLUSTERED started.
+2016-08-10 11:01:48,701 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 11:01:48,702 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:01:48,702 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 11:01:48,702 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 11:01:48,702 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 11:01:48,969 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 11:01:49,070 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:01:49,073 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:01:49,075 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 11:01:49,094 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 11:01:54,449 [loop_de_flow-polling://loop_de_flowFlow_1/293207180_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 11:01:59,670 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 11:02:02,270 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:02:05,998 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:02:11,373 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:02:12,904 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:02:16,896 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:02:17,598 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:02:18,409 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:02:18,925 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:03:00,281 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:03:01,470 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 11:03:01,856 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 11:03:02,254 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 11:03:02,256 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 11:03:02,463 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@60acd609: startup date [Wed Aug 10 11:03:02 BRT 2016]; root of context hierarchy
+2016-08-10 11:03:06,670 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 11:03:11,853 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 11:03:12,593 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 11:03:13,116 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 11:03:13,124 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 11:03:13,124 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4e4395c
+2016-08-10 11:03:13,175 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 11:03:13,204 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 11:03:13,205 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@237b2852
+2016-08-10 11:03:13,219 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 11:03:13,284 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 11:03:13,392 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 11:03:14,316 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:03:14,316 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:03:17,373 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:03:17,377 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 11:03:17,377 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 11:03:17,482 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=3030836d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:03:17,482 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=3030836d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:03:17,483 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 11:03:17,489 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:03:17,495 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 11:03:17,497 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 11:03:17,501 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 11:03:17,525 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 11:03:17,559 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:03:17,918 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 11:03:18,035 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 11:03:18,041 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 11:03:18,044 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 11:03:18,047 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/4723664' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 11:03:18,047 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/4723664' initialized from an externally provided properties instance.
+2016-08-10 11:03:18,047 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 11:03:18,365 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/4723664_$_NON_CLUSTERED started.
+2016-08-10 11:03:18,365 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 11:03:18,366 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:03:18,366 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 11:03:18,367 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 11:03:18,367 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 11:03:18,554 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 11:03:18,679 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:03:18,680 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:03:18,684 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 11:03:18,694 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 11:03:23,706 [loop_de_flow-polling://loop_de_flowFlow_1/4723664_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 11:03:26,917 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 11:03:29,909 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:03:31,114 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:03:41,110 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:03:43,837 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:05:56,704 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:05:57,684 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 11:05:58,058 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 11:05:58,617 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 11:05:58,617 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 11:05:59,001 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@65ec8b24: startup date [Wed Aug 10 11:05:58 BRT 2016]; root of context hierarchy
+2016-08-10 11:06:06,090 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 11:06:13,566 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 11:06:14,973 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 11:06:16,225 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 11:06:16,232 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 11:06:16,232 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@537b3b2e
+2016-08-10 11:06:16,770 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 11:06:16,801 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 11:06:16,802 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@643ecfef
+2016-08-10 11:06:16,818 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 11:06:17,035 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 11:06:17,336 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 11:06:22,370 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:06:22,370 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:06:25,722 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:06:25,726 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 11:06:25,726 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 11:06:25,978 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=15369d73
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:06:25,979 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=15369d73
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:06:25,980 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 11:06:25,986 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:06:25,990 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 11:06:25,993 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 11:06:25,994 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 11:06:26,037 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 11:06:26,074 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:06:26,450 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 11:06:27,431 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 11:06:27,436 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 11:06:27,441 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 11:06:27,443 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/876458742' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 11:06:27,443 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/876458742' initialized from an externally provided properties instance.
+2016-08-10 11:06:27,443 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 11:06:27,457 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/876458742_$_NON_CLUSTERED started.
+2016-08-10 11:06:27,457 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 11:06:27,458 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:06:27,458 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 11:06:27,458 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 11:06:27,458 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 11:06:27,772 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 11:06:27,858 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:06:27,858 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:06:27,860 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 11:06:27,866 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 11:06:55,524 [loop_de_flow-polling://loop_de_flowFlow_1/876458742_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 11:06:58,382 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 11:07:14,933 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:07:16,167 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:07:20,827 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=b1d648d0-5f03-11e6-a0ec-32a120524153
+  payload=org.mule.el.context.MessageContext
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    pollingFrequency=1000
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint.polling.1912630717
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2016-08-10 11:07:35,645 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Fim.....
+2016-08-10 11:08:11,041 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:08:11,749 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 11:08:12,093 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 11:08:12,542 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 11:08:12,542 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 11:08:12,807 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@280e8a1a: startup date [Wed Aug 10 11:08:12 BRT 2016]; root of context hierarchy
+2016-08-10 11:08:19,120 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 11:08:24,299 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 11:08:24,928 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 11:08:25,397 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 11:08:25,403 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 11:08:25,403 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2674d4f6
+2016-08-10 11:08:25,447 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 11:08:25,473 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 11:08:25,473 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@423f8a73
+2016-08-10 11:08:25,486 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 11:08:25,597 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 11:08:25,698 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 11:08:27,655 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:08:27,655 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:08:30,851 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:08:30,856 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 11:08:30,856 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 11:08:30,936 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=70fede7d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:08:30,936 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=70fede7d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:08:30,937 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 11:08:30,942 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:08:30,946 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 11:08:30,953 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 11:08:30,954 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 11:08:30,975 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 11:08:31,005 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:08:31,156 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 11:08:31,662 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 11:08:31,668 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 11:08:31,671 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 11:08:31,673 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/1823390262' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 11:08:31,673 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/1823390262' initialized from an externally provided properties instance.
+2016-08-10 11:08:31,673 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 11:08:31,702 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/1823390262_$_NON_CLUSTERED started.
+2016-08-10 11:08:31,702 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 11:08:31,703 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:08:31,703 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 11:08:31,704 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 11:08:31,704 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 11:08:32,069 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 11:08:32,112 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:08:32,113 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:08:32,115 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 11:08:32,121 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 11:09:15,519 [loop_de_flow-polling://loop_de_flowFlow_1/1823390262_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 11:09:18,150 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 11:09:20,355 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:09:22,040 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:09:24,318 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:09:25,747 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:09:30,236 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:09:31,943 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:09:35,003 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:09:36,125 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:10:12,245 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'loop_de_flow'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:10:13,369 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-10 11:10:13,698 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-10 11:10:14,018 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-10 11:10:14,019 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-10 11:10:14,195 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@455824ad: startup date [Wed Aug 10 11:10:14 BRT 2016]; root of context hierarchy
+2016-08-10 11:10:17,826 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-10 11:10:21,716 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-10 11:10:22,362 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2016-08-10 11:10:22,838 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-10 11:10:22,847 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_1
+2016-08-10 11:10:22,847 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@55bf35e5
+2016-08-10 11:10:22,892 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_1.stage1
+2016-08-10 11:10:22,917 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: loop_de_flowFlow_2
+2016-08-10 11:10:22,918 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@32e5af53
+2016-08-10 11:10:22,929 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: loop_de_flowFlow_2.stage1
+2016-08-10 11:10:23,006 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-tx-log\tx2.log
+2016-08-10 11:10:23,094 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\loop_de_flow\queue-xa-tx-log\tx2.log
+2016-08-10 11:10:24,406 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:10:24,407 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\loop_de_flow\loop_de_flow.xml'}]"
+2016-08-10 11:10:27,490 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'loop_de_flow'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:10:27,493 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-10 11:10:27,493 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-10 11:10:27,612 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=2776fd8f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:10:27,612 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=2776fd8f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2016-08-10 11:10:27,614 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2016-08-10 11:10:27,618 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-10 11:10:27,628 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-10 11:10:27,630 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_1
+2016-08-10 11:10:27,631 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_1.stage1
+2016-08-10 11:10:27,661 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: loop_de_flowFlow_1 on endpointUri: polling://-1912630717
+2016-08-10 11:10:27,694 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:10:27,979 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2016-08-10 11:10:28,454 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-08-10 11:10:28,461 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2016-08-10 11:10:28,463 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2016-08-10 11:10:28,466 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'loop_de_flow-polling://loop_de_flowFlow_1/657046385' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 16 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-08-10 11:10:28,466 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'loop_de_flow-polling://loop_de_flowFlow_1/657046385' initialized from an externally provided properties instance.
+2016-08-10 11:10:28,466 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2016-08-10 11:10:28,483 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler loop_de_flow-polling://loop_de_flowFlow_1/657046385_$_NON_CLUSTERED started.
+2016-08-10 11:10:28,483 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2016-08-10 11:10:28,485 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2016-08-10 11:10:28,485 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2016-08-10 11:10:28,486 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: loop_de_flowFlow_2
+2016-08-10 11:10:28,486 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: loop_de_flowFlow_2.stage1
+2016-08-10 11:10:28,855 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-10 11:10:28,951 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:10:28,952 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.loop_de_flow:type=Endpoint,service="loop_de_flowFlow_1",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2016-08-10 11:10:28,960 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.loop_de_flow:type=Connector,name="connector.polling.mule.default.1"
+2016-08-10 11:10:28,980 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: loop_de_flow                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-10 11:10:34,433 [loop_de_flow-polling://loop_de_flowFlow_1/657046385_Worker-1] INFO  org.mule.api.processor.LoggerMessageProcessor - Iniciado
+2016-08-10 11:10:44,566 [[loop_de_flow].loop_de_flowFlow_1.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Valor do payload ======= 3 ============
+2016-08-10 11:10:45,656 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 3
+2016-08-10 11:10:46,657 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:10:48,055 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 2
+2016-08-10 11:10:49,020 [[loop_de_flow].loop_de_flowFlow_2.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Entrou no Choice
+2016-08-10 11:10:50,238 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 1
+2016-08-10 11:10:51,032 [[loop_de_flow].loop_de_flowFlow_2.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Fim.....

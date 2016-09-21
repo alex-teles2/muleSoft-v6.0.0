@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <flow name="flowFlow_1">
+        <poll doc:name="Poll">
+            <logger level="INFO" doc:name="Logger"/>
+        </poll>
+        <set-variable variableName="ver1" value="#[&quot;Testando o reference flow&quot;]" doc:name="Variable"/>
+        <flow-ref name="flowFlow2" doc:name="reference_flow"/>
+    </flow>
+    <flow name="flowFlow2">
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

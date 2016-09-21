@@ -1,0 +1,474 @@
+2016-07-27 11:14:50,747 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apilayer_exercicio'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:14:51,767 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-07-27 11:14:52,167 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-07-27 11:14:52,557 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-07-27 11:14:52,557 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-07-27 11:14:52,805 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4f966719: startup date [Wed Jul 27 11:14:52 BRT 2016]; root of context hierarchy
+2016-07-27 11:14:57,881 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-27 11:15:01,991 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-07-27 11:15:03,990 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-07-27 11:15:03,999 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apilayer_exercicioFlow
+2016-07-27 11:15:04,000 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2ff498b0
+2016-07-27 11:15:04,089 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apilayer_exercicioFlow.stage1
+2016-07-27 11:15:04,268 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx2.log
+2016-07-27 11:15:04,453 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx2.log
+2016-07-27 11:15:06,765 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-07-27 11:15:06,766 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-07-27 11:15:09,836 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apilayer_exercicio'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:15:09,839 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-07-27 11:15:09,839 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-07-27 11:15:10,283 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-07-27 11:15:10,287 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:15:10,290 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-07-27 11:15:10,304 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apilayer_exercicioFlow
+2016-07-27 11:15:10,305 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apilayer_exercicioFlow.stage1
+2016-07-27 11:15:10,521 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-07-27 11:15:10,592 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apilayer_exercicio                                    *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-07-27 11:15:15,921 [[apilayer_exercicio].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=8a352580-5404-11e6-a4c4-7ace20524153
+  payload=org.glassfish.grizzly.utils.BufferInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    accept-language=pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+    cache-control=no-cache
+    connection=keep-alive
+    content-length=71
+    content-type=application/json
+    host=localhost:8081
+    http.listener.path=/
+    http.method=POST
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=/
+    http.remote.address=/127.0.0.1:64588
+    http.request.path=/
+    http.request.uri=/
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    origin=chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+    postman-token=0fc5161a-9390-4324-5827-3d2ba8691129
+    user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+  OUTBOUND scoped properties:
+    MULE_ENCODING=windows-1252
+  SESSION scoped properties:
+}
+2016-07-27 11:15:17,330 [[apilayer_exercicio].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=8a352580-5404-11e6-a4c4-7ace20524153
+  payload=org.glassfish.grizzly.utils.BufferInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    content-length=1001
+    content-type=text/html; charset=UTF-8
+    http.reason=OK
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2016-07-27 11:19:07,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'apilayer_exercicio'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:07,334 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apilayer_exercicioFlow
+2016-07-27 11:19:07,335 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:07,383 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-07-27 11:19:07,459 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-07-27 11:19:07,461 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-07-27 11:19:07,461 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-07-27 11:19:07,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'apilayer_exercicio'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:07,494 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-07-27 11:19:07,496 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apilayer_exercicioFlow
+2016-07-27 11:19:07,497 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:07,581 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-07-27 11:19:08,483 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@4f966719: startup date [Wed Jul 27 11:14:52 BRT 2016]; root of context hierarchy
+2016-07-27 11:19:08,652 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "apilayer_exercicio" shut down normally on: 27/07/16   *
+* 11:19                                                              *
+* Up for: 0 days, 0 hours, 3 mins, 58.768 sec                        *
+**********************************************************************
+2016-07-27 11:19:10,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apilayer_exercicio'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:10,279 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app apilayer_exercicio
+2016-07-27 11:19:10,297 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-07-27 11:19:10,336 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-07-27 11:19:10,389 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-07-27 11:19:10,389 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-07-27 11:19:10,425 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@15c1db59: startup date [Wed Jul 27 11:19:10 BRT 2016]; root of context hierarchy
+2016-07-27 11:19:11,869 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-27 11:19:16,776 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-07-27 11:19:16,778 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apilayer_exercicioFlow
+2016-07-27 11:19:16,778 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@139ca056
+2016-07-27 11:19:16,808 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:16,920 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx2.log
+2016-07-27 11:19:17,055 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx2.log
+2016-07-27 11:19:20,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-07-27 11:19:20,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-07-27 11:19:23,658 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apilayer_exercicio'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:23,660 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-07-27 11:19:23,660 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-07-27 11:19:25,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-07-27 11:19:25,127 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:25,130 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-07-27 11:19:25,131 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apilayer_exercicioFlow
+2016-07-27 11:19:25,131 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:25,205 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-07-27 11:19:25,212 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apilayer_exercicio                                    *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-07-27 11:19:30,465 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'apilayer_exercicio'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:30,468 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apilayer_exercicioFlow
+2016-07-27 11:19:30,468 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:30,474 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-07-27 11:19:30,484 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-07-27 11:19:30,485 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-07-27 11:19:30,485 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-07-27 11:19:30,514 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'apilayer_exercicio'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:30,515 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-07-27 11:19:30,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apilayer_exercicioFlow
+2016-07-27 11:19:30,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:30,519 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-07-27 11:19:30,624 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@15c1db59: startup date [Wed Jul 27 11:19:10 BRT 2016]; root of context hierarchy
+2016-07-27 11:19:30,798 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "apilayer_exercicio" shut down normally on: 27/07/16   *
+* 11:19                                                              *
+* Up for: 0 days, 0 hours, 0 mins, 7.138 sec                         *
+**********************************************************************
+2016-07-27 11:19:31,210 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apilayer_exercicio'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:19:31,240 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app apilayer_exercicio
+2016-07-27 11:19:31,240 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app apilayer_exercicio
+2016-07-27 11:19:31,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-07-27 11:19:31,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-07-27 11:19:31,291 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-07-27 11:19:31,291 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-07-27 11:19:31,311 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@39d7bfae: startup date [Wed Jul 27 11:19:31 BRT 2016]; root of context hierarchy
+2016-07-27 11:19:32,567 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-27 11:19:33,475 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-07-27 11:19:33,477 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apilayer_exercicioFlow
+2016-07-27 11:19:33,477 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@71f8bc5d
+2016-07-27 11:19:33,519 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:33,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx2.log
+2016-07-27 11:19:33,575 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx2.log
+2016-07-27 11:19:37,228 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-07-27 11:19:37,230 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apilayer_exercicioFlow
+2016-07-27 11:19:37,231 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apilayer_exercicioFlow.stage1
+2016-07-27 11:19:37,235 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-07-27 11:19:37,489 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@39d7bfae: startup date [Wed Jul 27 11:19:31 BRT 2016]; root of context hierarchy
+2016-07-27 11:19:37,615 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_73]
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.IOUtil.read(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.PipeImpl$Initializer$LoopbackConnector.run(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.PipeImpl$Initializer.run(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.PipeImpl$Initializer.run(Unknown Source) ~[?:1.8.0_73]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_73]
+	at sun.nio.ch.PipeImpl.<init>(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.SelectorProviderImpl.openPipe(Unknown Source) ~[?:1.8.0_73]
+	at java.nio.channels.Pipe.open(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.WindowsSelectorImpl.<init>(Unknown Source) ~[?:1.8.0_73]
+	at sun.nio.ch.WindowsSelectorProvider.openSelector(Unknown Source) ~[?:1.8.0_73]
+	at org.glassfish.grizzly.nio.Selectors.newSelector(Selectors.java:62) ~[grizzly-framework-2.3.24.jar:2.3.24]
+	at org.glassfish.grizzly.nio.SelectorRunner.create(SelectorRunner.java:109) ~[grizzly-framework-2.3.24.jar:2.3.24]
+	at org.glassfish.grizzly.nio.NIOTransport.startSelectorRunners(NIOTransport.java:287) ~[grizzly-framework-2.3.24.jar:2.3.24]
+	at org.glassfish.grizzly.nio.NIOTransport.start(NIOTransport.java:506) ~[grizzly-framework-2.3.24.jar:2.3.24]
+	at com.ning.http.client.providers.grizzly.GrizzlyAsyncHttpProvider.<init>(GrizzlyAsyncHttpProvider.java:98) ~[async-http-client-1.9.37.jar:?]
+	at org.mule.module.http.internal.request.grizzly.GrizzlyHttpClient.initialise(GrizzlyHttpClient.java:113) ~[mule-module-http-3.8.0.jar:3.8.0]
+	at org.mule.module.http.internal.request.DefaultHttpRequesterConfig.initialise(DefaultHttpRequesterConfig.java:124) ~[mule-module-http-3.8.0.jar:3.8.0]
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_73]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_73]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:237) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.lifecycle.phases.MuleContextInitialisePhase.applyLifecycle(MuleContextInitialisePhase.java:71) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:99) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:71) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.lifecycle.RegistryLifecycleManager.invokePhase(RegistryLifecycleManager.java:155) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:126) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.registry.AbstractRegistry.fireLifecycle(AbstractRegistry.java:146) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:116) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:177) ~[mule-module-spring-config-3.8.0.jar:3.8.0]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:100) ~[mule-module-spring-config-3.8.0.jar:3.8.0]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.config.builders.AutoConfigurationBuilder.autoConfigure(AutoConfigurationBuilder.java:101) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.config.builders.AutoConfigurationBuilder.doConfigure(AutoConfigurationBuilder.java:52) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.context.DefaultMuleContextFactory$1.configure(DefaultMuleContextFactory.java:89) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:196) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:63) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:58) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:25) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:544) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:555) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:532) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:348) ~[mule-module-launcher-3.8.0.jar:3.8.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_73]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_73]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_73]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_73]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_73]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_73]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_73]
+2016-07-27 11:19:37,616 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - App 'apilayer_exercicio' never started, nothing to dispose of
+2016-07-27 11:20:28,231 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apilayer_exercicio'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:20:30,292 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-07-27 11:20:30,788 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-07-27 11:20:31,143 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-07-27 11:20:31,143 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-07-27 11:20:31,464 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2babf189: startup date [Wed Jul 27 11:20:31 BRT 2016]; root of context hierarchy
+2016-07-27 11:20:36,475 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-27 11:20:41,121 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-07-27 11:20:45,991 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-07-27 11:20:45,997 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apilayer_exercicioFlow
+2016-07-27 11:20:45,997 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2ff498b0
+2016-07-27 11:20:46,081 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apilayer_exercicioFlow.stage1
+2016-07-27 11:20:46,182 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx2.log
+2016-07-27 11:20:46,252 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx2.log
+2016-07-27 11:20:48,381 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-07-27 11:20:48,382 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-07-27 11:20:51,644 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apilayer_exercicio'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:20:51,646 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-07-27 11:20:51,646 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-07-27 11:20:51,907 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-07-27 11:20:51,938 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-07-27 11:20:51,948 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-07-27 11:20:51,951 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apilayer_exercicioFlow
+2016-07-27 11:20:51,952 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apilayer_exercicioFlow.stage1
+2016-07-27 11:20:52,206 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-07-27 11:20:52,279 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apilayer_exercicio                                    *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-07-27 11:21:07,794 [[apilayer_exercicio].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=5bf373b0-5405-11e6-bc38-7ace20524153
+  payload=org.glassfish.grizzly.utils.BufferInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    accept-language=pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+    cache-control=no-cache
+    connection=keep-alive
+    content-length=71
+    content-type=application/json
+    host=localhost:8081
+    http.listener.path=/
+    http.method=POST
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=/
+    http.remote.address=/127.0.0.1:64661
+    http.request.path=/
+    http.request.uri=/
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    origin=chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+    postman-token=5cfeba0c-395b-4345-3dce-7034aa72d49c
+    user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+  OUTBOUND scoped properties:
+    MULE_ENCODING=windows-1252
+  SESSION scoped properties:
+}
+2016-08-03 15:38:19,912 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apilayer_exercicio'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-03 15:38:20,476 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-03 15:38:20,751 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-03 15:38:21,017 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-03 15:38:21,018 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-03 15:38:21,179 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@116a2108: startup date [Wed Aug 03 15:38:21 BRT 2016]; root of context hierarchy
+2016-08-03 15:38:24,283 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-03 15:38:27,114 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-03 15:38:34,253 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-03 15:38:34,260 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apilayer_exercicioFlow
+2016-08-03 15:38:34,260 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@44d43cc9
+2016-08-03 15:38:34,326 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apilayer_exercicioFlow.stage1
+2016-08-03 15:38:34,407 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx2.log
+2016-08-03 15:38:34,453 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx2.log
+2016-08-03 15:38:38,730 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-08-03 15:38:38,730 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-08-03 15:38:41,809 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apilayer_exercicio'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-03 15:38:41,814 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-03 15:38:41,814 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-03 15:38:41,970 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-08-03 15:38:41,976 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-03 15:38:41,981 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-03 15:38:41,985 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apilayer_exercicioFlow
+2016-08-03 15:38:41,986 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apilayer_exercicioFlow.stage1
+2016-08-03 15:38:42,128 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-03 15:38:42,164 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apilayer_exercicio                                    *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-08-03 15:43:26,829 [[apilayer_exercicio].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/
+2016-08-03 15:43:26,830 [[apilayer_exercicio].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/variation/]
+2016-08-03 15:44:03,877 [[apilayer_exercicio].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {
+    "start-data":"a ser definida", 
+    "end-date": "a ser definida",
+    "access_key":"5176bef64c5d40f24992293642811e1b"
+}
+2016-08-03 15:44:49,268 [[apilayer_exercicio].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {"success":false,"error":{"code":101,"type":"missing_access_key","info":"You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"}}
+2016-08-05 09:38:46,870 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apilayer_exercicio'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-05 09:38:50,141 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-08-05 09:38:51,585 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-08-05 09:38:52,997 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-08-05 09:38:52,997 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-08-05 09:38:54,007 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@446c3920: startup date [Fri Aug 05 09:38:54 BRT 2016]; root of context hierarchy
+2016-08-05 09:39:00,512 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-05 09:39:05,169 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-08-05 09:39:07,728 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-08-05 09:39:07,737 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apilayer_exercicioFlow
+2016-08-05 09:39:07,737 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f409872
+2016-08-05 09:39:07,907 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apilayer_exercicioFlow.stage1
+2016-08-05 09:39:08,009 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-tx-log\tx2.log
+2016-08-05 09:39:08,128 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx1.log and C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\.\.mule\apilayer_exercicio\queue-xa-tx-log\tx2.log
+2016-08-05 09:39:10,443 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-08-05 09:39:10,444 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\a.sousa.nascimento\Desktop\workspaces\muleSoft v6.0.0\.mule\apps\apilayer_exercicio\apilayer_exercicio.xml'}]"
+2016-08-05 09:39:13,544 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apilayer_exercicio'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-05 09:39:13,546 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-08-05 09:39:13,546 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-08-05 09:39:13,814 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-08-05 09:39:13,817 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-08-05 09:39:13,821 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-08-05 09:39:13,824 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apilayer_exercicioFlow
+2016-08-05 09:39:13,825 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apilayer_exercicioFlow.stage1
+2016-08-05 09:39:14,018 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-08-05 09:39:14,211 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apilayer_exercicio                                    *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
